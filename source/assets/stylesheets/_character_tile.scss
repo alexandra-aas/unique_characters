@@ -1,0 +1,66 @@
+.character-tiles {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.character-tile-wrapper {
+  @include size(100% 40vh);
+  box-shadow: 0 1px 0 0 $base-border-color, 1px 0 0 0 $base-border-color;
+
+  @include media($medium-screen-up) {
+    width: 50%;
+  }
+
+  @include media($large-screen-up) {
+    width: 25%;
+  }
+}
+
+.character-tile {
+  @include flex-center;
+  @include size(100%);
+  font-weight: bold;
+  position: relative;
+  transition: all $base-duration $base-timing;
+  z-index: $high-z-index;
+
+  path {
+    fill: $base-font-color;
+  }
+
+  &:hover {
+    background-color: $secondary-background-color;
+    box-shadow: $far-shadow, $close-shadow;
+    color: $action-color;
+    transform: translateY(-$small-spacing);
+
+    path {
+      fill: $action-color;
+    }
+  }
+}
+
+.character-tile__meta {
+  @include position(absolute, null $base-spacing $base-spacing);
+  display: flex;
+  font-size: $xs-font-size;
+  justify-content: space-between;
+  opacity: 0.25;
+
+  .character-tile:hover & {
+    opacity: 1;
+  }
+}
+
+.character-tile__arrow {
+  @include flex-center;
+  @include hidden;
+  @include position(absolute, 0 0 null null);
+  @include size($medium-spacing);
+  background-color: $action-color;
+  color: $white;
+
+  .character-tile:hover & {
+    @include visible;
+  }
+}

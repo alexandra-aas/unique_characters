@@ -4,10 +4,23 @@
     %meta{charset: "utf-8"}
     %meta{content: "IE=edge,chrome=1", http: {equiv: "X-UA-Compatible"}}
     %meta{name: "viewport", content: "width=device-width, initial-scale=1"}
-    %title= current_page.data.title || "The Middleman"
+    %title= current_page.data.title || "Unique Characters"
     = stylesheet_link_tag "application"
+    = stylesheet_link_tag "https://fonts.googleapis.com/icon?family=Material+Icons"
 
   %body{class: page_classes}
-    = yield
+    %nav
+      %ul.filters
+        - ("a".."z").each do |character|
+          %li.filter
+            - if tag_path(character)
+              = link_to character, tag_path(character)
+            - else
+              = character
+    %main
+      %header
+        %h1= link_to "Unique Characters", "/"
+      = yield
+
     = javascript_include_tag "https://code.jquery.com/jquery-2.1.1.min.js"
     = javascript_include_tag "application"

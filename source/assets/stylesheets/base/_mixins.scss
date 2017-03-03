@@ -1,0 +1,19 @@
+@mixin flex-center {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+@mixin hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+@mixin media($size) {
+  @media (min-width: $size) { @content; }
+}
+
+@mixin visible {
+  opacity: 1;
+  visibility: visible;
+}
