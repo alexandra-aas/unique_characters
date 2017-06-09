@@ -19,7 +19,9 @@
               = character
     %main
       %header
-        %h1= link_to "Unique Characters", "/"
+        %h1
+          = link_to "Unique Characters", "/"
+          = yield_content :breadcrumb
       = yield
 
     = javascript_include_tag "https://code.jquery.com/jquery-2.1.1.min.js"

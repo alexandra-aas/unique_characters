@@ -1,2 +1,6 @@
+- content_for :breadcrumb do
+  %span.breadcrumb
+  = tagname
+
 - page_articles.each do |article|
   = partial "character_tile", locals: { article: article }

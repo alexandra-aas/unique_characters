@@ -53,3 +53,9 @@ nav {
   line-height: $loose-line-height;
   text-transform: uppercase;
 }
+
+.breadcrumb::after {
+  @include margin(null $small-spacing);
+  color: $dark-yellow;
+  content: "\203A";
+}

@@ -1,3 +1,5 @@
+$character-tile-arrow-size: $medium-spacing;
+
 .character-tiles {
   display: flex;
   flex-wrap: wrap;
@@ -56,11 +58,24 @@
   @include flex-center;
   @include hidden;
   @include position(absolute, 0 0 null null);
-  @include size($medium-spacing);
+  @include size($character-tile-arrow-size);
   background-color: $action-color;
   color: $white;
 
+  i {
+    @include flex-center;
+    @include hidden;
+    @include size($character-tile-arrow-size);
+    transform: translate(-$character-tile-arrow-size, $character-tile-arrow-size);
+    transition: all $slow-duration $base-timing;
+  }
+
   .character-tile:hover & {
     @include visible;
+
+    i {
+      @include visible;
+      transform: translate(0, 0);
+    }
   }
 }

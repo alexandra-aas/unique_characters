@@ -1,5 +1,5 @@
 // Typography
-$base-font-family: "Range Mono", monospace;
+$base-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 
 // Font Sizes
 $base-font-size: 1em;
@@ -22,10 +22,9 @@ $black: #000;
 $dark-gray: #333;
 $light-gray: #AAA;
 $white: #fff;
-$blue: #3C73FF;
-$yellow: #FFEA43;
-$shade-yellow: shade($yellow, 10%);
-
+$blue: #4C65E7;
+$yellow: #FBC547;
+$dark-yellow: shade($yellow, 30%);
 
 // Font Colors
 $base-font-color: $dark-gray;
@@ -37,7 +36,7 @@ $base-background-color: $yellow;
 $secondary-background-color: $white;
 
 // Borders
-$base-border-color: $shade-yellow;
+$base-border-color: shade($yellow, 10%);
 $base-border: 1px solid $base-border-color;
 
 // Shadows
@@ -47,6 +46,7 @@ $far-shadow: 0 20px 40px 0 $shadow-color;
 
 // Animations
 $base-duration: 300ms;
+$slow-duration: 500ms;
 $base-timing: ease-in-out;
 
 // Z-Index
