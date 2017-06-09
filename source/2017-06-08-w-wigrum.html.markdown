@@ -1,6 +1,6 @@
 ---
 title: Wigrum
-date: 2017-07-17
+date: 2017-06-08
 tags: W
 website_url: "https://www.batfoundry.com/family/wigrum"
 ---
