@@ -1,4 +1,3 @@
 .character-tiles
   - blog.articles.each do |article|
-    - 8.times do
-      = partial "character_tile", locals: { article: article }
+    = partial "character_tile", locals: { article: article }
