@@ -47,7 +47,7 @@ $character-tile-arrow-size: $medium-spacing;
   display: flex;
   font-size: $xs-font-size;
   justify-content: space-between;
-  opacity: 0.25;
+  opacity: 0.5;
 
   .character-tile:hover & {
     opacity: 1;
