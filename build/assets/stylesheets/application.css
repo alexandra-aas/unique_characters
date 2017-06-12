@@ -401,10 +401,10 @@ html {
   text-rendering: optimizeLegibility; }
 
 body {
-  background-color: #FBC547; }
+  background-color: #FFC438; }
 
 main {
-  box-shadow: inset 1px 0 0 #e2b140;
+  box-shadow: inset 1px 0 0 #e6b032;
   margin-left: 80px;
   min-height: 100vh; }
 
@@ -414,7 +414,7 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border-bottom: 1px solid #e2b140;
+  border-bottom: 1px solid #e6b032;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -466,7 +466,7 @@ nav {
 .breadcrumb::after {
   margin-right: 10px;
   margin-left: 10px;
-  color: #b08a32;
+  color: #b38927;
   content: "\203A"; }
 
 .character-tiles {
@@ -479,13 +479,16 @@ nav {
 .character-tile-wrapper {
   height: 40vh;
   width: 100%;
-  box-shadow: 0 1px 0 0 #e2b140, 1px 0 0 0 #e2b140; }
+  box-shadow: 0 1px 0 0 #e6b032, 1px 0 0 0 #e6b032; }
   @media (min-width: 768px) {
     .character-tile-wrapper {
       width: 50%; } }
   @media (min-width: 1440px) {
     .character-tile-wrapper {
       width: 25%; } }
+  @media (min-width: 2550px) {
+    .character-tile-wrapper {
+      width: 20%; } }
 
 .character-tile {
   -webkit-box-align: center;
