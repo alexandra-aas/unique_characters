@@ -16,6 +16,10 @@ $character-tile-arrow-size: $medium-spacing;
   @include media($large-screen-up) {
     width: 25%;
   }
+
+  @include media($xl-screen-up) {
+    width: 20%;
+  }
 }
 
 .character-tile {
