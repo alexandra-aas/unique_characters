@@ -1,0 +1,6 @@
+---
+title: Value Serif
+date: 2017-06-03
+tags: J
+website_url: "https://www.colophon-foundry.org/typefaces/value/"
+---
