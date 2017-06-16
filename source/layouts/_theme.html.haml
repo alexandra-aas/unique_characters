@@ -1,0 +1,3 @@
+.theme-dots
+  - data.themes.each do |theme|
+    .theme-dot{ class: "theme-dot-#{theme.name}", data: { change_theme: theme.name } }

@@ -8,14 +8,14 @@ header {
   justify-content: space-between;
 
   @include media-down($medium-screen) {
-    background-color: $secondary-background-color;
+    background-color: $base-background-color;
   }
 }
 
 .breadcrumb::after {
   @include margin(null $small-spacing);
-  color: $dark-yellow;
   content: "\203A";
+  opacity: 0.5;
 }
 
 .header-info {

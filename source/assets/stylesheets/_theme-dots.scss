@@ -1,0 +1,19 @@
+$theme-dot-size: 16px;
+$theme-height: $theme-dot-size + $small-spacing * 2;
+
+.theme-dots {
+  @include padding(null $small-spacing);
+  @include position(absolute, null 0 0 null);
+  align-items: center;
+  background-color: $dark-background-color;
+  border-top-left-radius: $theme-height / 2;
+  display: flex;
+  height: $theme-height;
+  z-index: 20000;
+}
+
+.theme-dot {
+  @include margin(null $xs-spacing);
+  @include circle($theme-dot-size);
+  cursor: pointer;
+}

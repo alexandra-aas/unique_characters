@@ -1,3 +1,8 @@
+@mixin circle($size) {
+  @include size($size);
+  border-radius: 50%;
+}
+
 @mixin flex-center {
   align-items: center;
   display: flex;
@@ -15,6 +20,11 @@
 
 @mixin media-up($size) {
   @media (min-width: $size) { @content; }
+}
+
+@mixin overflow-y {
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
 }
 
 @mixin visible {

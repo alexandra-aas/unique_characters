@@ -1,0 +1,11 @@
+<style>
+  <% data.themes.each do |theme| %>
+    .theme-<%= theme.name %> .main-wrapper {
+      background-color: <%= theme.color %>;
+    }
+
+    .theme-dot-<%= theme.name %> {
+      background-color: <%= theme.color %>;
+    }
+  <% end %>
+</style>

@@ -1,0 +1,8 @@
+- name: "gold"
+  color: "#FFC438"
+- name: "mint"
+  color: "#D2E4C5"
+- name: "snow"
+  color: "#EEE"
+- name: "pink"
+  color: "#FFC6AB"
