@@ -56,8 +56,10 @@ $character-tile-arrow-size: $medium-spacing;
   justify-content: space-between;
   opacity: 0.5;
 
-  .character-tile:hover & {
-    opacity: 1;
+  @include media-up($medium-screen) {
+    .character-tile:hover & {
+      opacity: 1;
+    }
   }
 }
 
