@@ -1,5 +1,3 @@
-$nav-size: $large-spacing;
-
 html {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
@@ -8,54 +6,39 @@ html {
 }
 
 body {
+  background-color: $dark-background-color;
+}
+
+.main-wrapper {
+  @include position(absolute, 0);
   background-color: $base-background-color;
-}
+  overflow: hidden;
+  transition: margin $slow-duration $base-timing;
 
-main {
-  box-shadow: inset 1px 0 0 $base-border-color;
-  margin-left: $nav-size;
-  min-height: 100vh;
-}
-
-header {
-  @include padding(null $medium-spacing);
-  align-items: center;
-  border-bottom: $base-border;
-  display: flex;
-  font-weight: bold;
-  height: $nav-size;
-  justify-content: center;
-
-  @include media($medium-screen-up) {
-    justify-content: flex-start;
+  .info-show & {
+    margin: $info-height $large-spacing $large-spacing;
   }
 }
 
-nav {
-  @include padding($base-spacing null);
-  @include position(fixed, 0 null 0 0);
-  background-color: $secondary-background-color;
-  width: $nav-size;
+.main-overlay {
+  @include hidden;
+  @include position(absolute, 0);
+  background-color: $transparent-background-color;
+  transition: all $base-duration $base-timing;
+  z-index: $overlay-z-index;
+
+  .info-show & {
+    @include visible;
+
+    &:hover {
+      cursor: pointer;
+      opacity: 0;
+    }
+  }
 }
 
-.filters {
-  @include size(100%);
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.filter {
-  color: $light-font-color;
-  font-size: $small-font-size;
-  font-weight: bold;
-  line-height: $loose-line-height;
-  text-transform: uppercase;
-}
-
-.breadcrumb::after {
-  @include margin(null $small-spacing);
-  color: $dark-yellow;
-  content: "\203A";
+main {
+  height: 100vh;
+  overflow-y: scroll;
+  padding-left: $nav-size;
 }

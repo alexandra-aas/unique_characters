@@ -1,0 +1,28 @@
+$button-height: 50px;
+$button-offset: 4px;
+$button-offset-far: $button-offset * 2;
+
+.button {
+  @include padding(null $medium-spacing);
+  border: $button-border;
+  color: $white;
+  font-family: $mono-font-family;
+  font-size: $small-font-size;
+  height: $button-height;
+  line-height: $button-height + $button-offset;
+  position: relative;
+  transition: all $base-duration $base-timing;
+
+  &::after {
+    @include position(absolute, -1px);
+    border: $button-border;
+    content: "";
+    display: block;
+    transform: translate($button-offset, $button-offset);
+  }
+
+  &:hover {
+    background-color: $white;
+    color: $base-font-color;
+  }
+}

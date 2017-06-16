@@ -1,0 +1,31 @@
+nav {
+  @include padding($base-spacing null);
+  @include position(absolute, 0 null 0 0);
+  background-color: $secondary-background-color;
+  box-shadow: 1px 0 0 $base-border-color;
+  width: $nav-size;
+}
+
+.filters {
+  @include size(100%);
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.filter {
+  color: $light-gray;
+  font-size: $small-font-size;
+  font-weight: bold;
+  line-height: $loose-line-height;
+  text-transform: uppercase;
+
+  a {
+    color: $base-font-color;
+
+    &:hover {
+      color: $action-color;
+    }
+  }
+}

@@ -1,0 +1,8 @@
+%nav
+  %ul.filters
+    - ("a".."z").each do |character|
+      %li.filter
+        - if tag_path(character)
+          = link_to character, tag_path(character)
+        - else
+          = character

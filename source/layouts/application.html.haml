@@ -8,21 +8,14 @@
     = stylesheet_link_tag "application"
     = stylesheet_link_tag "https://fonts.googleapis.com/icon?family=Material+Icons"
 
-  %body{class: page_classes}
-    %nav
-      %ul.filters
-        - ("a".."z").each do |character|
-          %li.filter
-            - if tag_path(character)
-              = link_to character, tag_path(character)
-            - else
-              = character
-    %main
-      %header
-        %h1
-          = link_to "Unique Characters", "/"
-          = yield_content :breadcrumb
-      = yield
+  %body
+    = partial "layouts/info"
+    .main-wrapper
+      .main-overlay{ data: { info_hide: true } }
+      = partial "layouts/nav"
+      %main
+        = partial "layouts/header"
+        = yield
 
     = javascript_include_tag "https://code.jquery.com/jquery-2.1.1.min.js"
     = javascript_include_tag "application"

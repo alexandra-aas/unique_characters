@@ -17,6 +17,7 @@ $xs-spacing: $base-spacing / 4;
 $small-spacing: $base-spacing / 2;
 $medium-spacing: $base-spacing * 2;
 $large-spacing: $base-spacing * 4;
+$xl-spacing: $base-spacing * 6;
 
 // Colors
 $black: #000;
@@ -29,16 +30,18 @@ $dark-yellow: shade($yellow, 30%);
 
 // Font Colors
 $base-font-color: $dark-gray;
-$light-font-color: $light-gray;
 $action-color: $blue;
 
 // Background Colors
 $base-background-color: $yellow;
 $secondary-background-color: $white;
+$dark-background-color: $dark-gray;
+$transparent-background-color: rgba($black, 0.5);
 
 // Borders
 $base-border-color: shade($yellow, 10%);
 $base-border: 1px solid $base-border-color;
+$button-border: 1px solid $white;
 
 // Shadows
 $shadow-color: rgba($black, 0.2);
@@ -51,13 +54,17 @@ $slow-duration: 400ms;
 $base-timing: ease-in-out;
 
 // Z-Index
-$high-z-index: 1000;
+$character-tile-z-index: 1000;
+$overlay-z-index: 2000;
+
+// Sizes
+$info-height: 200px;
+$nav-size: $large-spacing;
 
 //Breakpoints
 $ipad-width: 768px;
 $macbook-width: 1440px;
 $imac-width: 2550px;
-
 $medium-screen-up: $ipad-width;
 $large-screen-up: $macbook-width;
 $xl-screen-up: $imac-width;

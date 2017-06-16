@@ -1,0 +1,19 @@
+header {
+  @include padding(null $medium-spacing);
+  align-items: center;
+  border-bottom: $base-border;
+  display: flex;
+  font-weight: bold;
+  height: $nav-size;
+  justify-content: space-between;
+}
+
+.breadcrumb::after {
+  @include margin(null $small-spacing);
+  color: $dark-yellow;
+  content: "\203A";
+}
+
+.header-info {
+  cursor: pointer;
+}

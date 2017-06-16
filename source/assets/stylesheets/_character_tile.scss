@@ -28,7 +28,7 @@ $character-tile-arrow-size: $medium-spacing;
   @include size(100%);
   position: relative;
   transition: all $base-duration $base-timing;
-  z-index: $high-z-index;
+  z-index: $character-tile-z-index;
 
   path {
     fill: $base-font-color;

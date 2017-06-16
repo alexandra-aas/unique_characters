@@ -1,0 +1,13 @@
+.info {
+  @include padding(null $xl-spacing);
+  align-items: center;
+  color: $white;
+  display: none;
+  height: $info-height;
+  justify-content: space-between;
+  position: relative;
+
+  .info-show & {
+    display: flex;
+  }
+}
