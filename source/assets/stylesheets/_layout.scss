@@ -11,7 +11,6 @@ body {
 
 .main-wrapper {
   @include position(absolute, 0);
-  background-color: $base-background-color;
   overflow: hidden;
   transition: margin $slow-duration $base-timing;
 
@@ -48,7 +47,7 @@ body {
 main {
   height: 100vh;
   overflow-y: scroll;
-  -webkit-overflow-scrolling: touch;
+  -webkit-overflow-scrolling: auto;
 
   @include media-up($medium-screen) {
     padding-left: $nav-size;

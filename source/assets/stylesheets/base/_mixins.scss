@@ -1,3 +1,8 @@
+@mixin circle($size) {
+  @include size($size);
+  border-radius: 50%;
+}
+
 @mixin flex-center {
   align-items: center;
   display: flex;

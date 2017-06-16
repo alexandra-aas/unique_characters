@@ -1,0 +1,27 @@
+$theme-circle-size: 16px;
+
+.theme {
+  @include padding(null $large-spacing);
+  @include position(absolute, null 0 0);
+  align-items: center;
+  display: flex;
+  font-family: $mono-font-family;
+  height: $large-spacing;
+}
+
+.theme-circle {
+  @include circle($theme-circle-size);
+  margin-left: $small-spacing;
+}
+
+.theme-circle-gold {
+  background-color: $theme-gold;
+}
+
+.theme-circle-mint {
+  background-color: $theme-mint;
+}
+
+.theme-circle-snow {
+  background-color: $theme-snow;
+}

@@ -25,21 +25,23 @@ $dark-gray: #333;
 $light-gray: #AAA;
 $white: #fff;
 $blue: #4C65E7;
-$yellow: #FFC438;
-$dark-yellow: shade($yellow, 30%);
+
+// Themes
+$theme-gold: #FFC438;
+$theme-mint: #D2E4C5;
+$theme-snow: $white;
 
 // Font Colors
 $base-font-color: $dark-gray;
 $action-color: $blue;
 
 // Background Colors
-$base-background-color: $yellow;
 $secondary-background-color: $white;
 $dark-background-color: $dark-gray;
 $transparent-background-color: rgba($black, 0.5);
 
 // Borders
-$base-border-color: shade($yellow, 10%);
+$base-border-color: rgba($dark-gray, 0.2);
 $base-border: 1px solid $base-border-color;
 $button-border: 1px solid $white;
 
