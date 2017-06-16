@@ -1,3 +1,4 @@
+$character-tile-height: 400px;
 $character-tile-arrow-size: $medium-spacing;
 
 .character-tiles {
@@ -6,26 +7,25 @@ $character-tile-arrow-size: $medium-spacing;
 }
 
 .character-tile-wrapper {
-  @include size(100% 40vh);
+  @include size(100% $character-tile-height);
   box-shadow: 0 1px 0 0 $base-border-color, 1px 0 0 0 $base-border-color;
 
   @include media($medium-screen-up) {
-    width: 50%;
+    width: calc(100% / 2);
   }
 
   @include media($large-screen-up) {
-    width: 25%;
+    width: calc(100% / 4);
   }
 
   @include media($xl-screen-up) {
-    width: 20%;
+    width: calc(100% / 6);
   }
 }
 
 .character-tile {
   @include flex-center;
   @include size(100%);
-  font-weight: bold;
   position: relative;
   transition: all $base-duration $base-timing;
   z-index: $high-z-index;
@@ -49,6 +49,7 @@ $character-tile-arrow-size: $medium-spacing;
 .character-tile__meta {
   @include position(absolute, null $base-spacing $base-spacing);
   display: flex;
+  font-family: $mono-font-family;
   font-size: $xs-font-size;
   justify-content: space-between;
   opacity: 0.5;
