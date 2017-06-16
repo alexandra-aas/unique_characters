@@ -48,6 +48,7 @@ body {
 main {
   height: 100vh;
   overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
 
   @include media-up($medium-screen) {
     padding-left: $nav-size;

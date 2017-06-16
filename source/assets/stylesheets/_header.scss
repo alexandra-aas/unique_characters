@@ -6,6 +6,10 @@ header {
   font-weight: bold;
   height: $nav-size;
   justify-content: space-between;
+
+  @include media-down($medium-screen) {
+    background-color: $secondary-background-color;
+  }
 }
 
 .breadcrumb::after {

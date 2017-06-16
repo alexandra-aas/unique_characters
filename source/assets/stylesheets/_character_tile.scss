@@ -34,14 +34,16 @@ $character-tile-arrow-size: $medium-spacing;
     fill: $base-font-color;
   }
 
-  &:hover {
-    background-color: $secondary-background-color;
-    box-shadow: $far-shadow, $close-shadow;
-    color: $action-color;
-    transform: translateY(-$small-spacing);
+  @include media-up($medium-screen) {
+    &:hover {
+      background-color: $secondary-background-color;
+      box-shadow: $far-shadow, $close-shadow;
+      color: $action-color;
+      transform: translateY(-$small-spacing);
 
-    path {
-      fill: $action-color;
+      path {
+        fill: $action-color;
+      }
     }
   }
 }
@@ -75,12 +77,14 @@ $character-tile-arrow-size: $medium-spacing;
     transition: all $slow-duration $base-timing;
   }
 
-  .character-tile:hover & {
-    @include visible;
-
-    i {
+  @include media-up($medium-screen) {
+    .character-tile:hover & {
       @include visible;
-      transform: translate(0, 0);
+
+      i {
+        @include visible;
+        transform: translate(0, 0);
+      }
     }
   }
 }

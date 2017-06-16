@@ -1,6 +1,6 @@
 .info {
+  @include padding(null $base-spacing);
   @include hidden;
-  @include padding(null $medium-spacing);
   color: $white;
   display: flex;
   flex-direction: column;
@@ -11,6 +11,7 @@
   transition: all $base-duration $base-timing;
 
   @include media-up($medium-screen) {
+    @include padding(null $medium-spacing);
     align-items: center;
     flex-direction: row;
     height: $info-height;
