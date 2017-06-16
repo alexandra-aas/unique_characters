@@ -1,17 +1,22 @@
 nav {
-  @include padding($base-spacing null);
   @include position(absolute, 0 null 0 0);
   background-color: $secondary-background-color;
   box-shadow: 1px 0 0 $base-border-color;
   width: $nav-size;
+
+  @include media-down($medium-screen) {
+    display: none;
+  }
 }
 
 .filters {
+  @include padding($base-spacing null);
   @include size(100%);
   align-items: center;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  overflow-y: scroll;
 }
 
 .filter {

@@ -16,7 +16,15 @@ body {
   transition: margin $slow-duration $base-timing;
 
   .info-show & {
-    margin: $info-height $large-spacing $large-spacing;
+    margin-top: $info-height-mobile;
+
+    @include media-up($medium-screen) {
+      margin-top: $info-height;
+    }
+
+    @include media-up($large-screen) {
+      @include margin(null $large-spacing $large-spacing);
+    }
   }
 }
 
@@ -40,5 +48,8 @@ body {
 main {
   height: 100vh;
   overflow-y: scroll;
-  padding-left: $nav-size;
+
+  @include media-up($medium-screen) {
+    padding-left: $nav-size;
+  }
 }

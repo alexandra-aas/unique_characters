@@ -59,12 +59,13 @@ $overlay-z-index: 2000;
 
 // Sizes
 $info-height: 200px;
+$info-height-mobile: 80vh;
 $nav-size: $large-spacing;
 
 //Breakpoints
 $ipad-width: 768px;
 $macbook-width: 1440px;
 $imac-width: 2550px;
-$medium-screen-up: $ipad-width;
-$large-screen-up: $macbook-width;
-$xl-screen-up: $imac-width;
+$medium-screen: $ipad-width;
+$large-screen: $macbook-width;
+$xl-screen: $imac-width;

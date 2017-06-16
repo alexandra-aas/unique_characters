@@ -11,8 +11,4 @@ module ApplicationHelpers
   def form_path
     "https://goo.gl/forms/D72gzFDcTB1w8aql2"
   end
-
-  def material_icon("icon")
-    content_tag :i, "icon", class: "material-icons"
-  end
 end
