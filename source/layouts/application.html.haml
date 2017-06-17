@@ -1,10 +1,10 @@
 !!!
 %html
   %head
-    %meta{charset: "utf-8"}
-    %meta{content: "IE=edge,chrome=1", http: {equiv: "X-UA-Compatible"}}
-    %meta{name: "viewport", content: "width=device-width, initial-scale=1"}
-    %title= current_page.data.title || "Unique Characters"
+    %meta{ charset: "utf-8" }
+    %meta{ content: "IE=edge,chrome=1", http: { equiv: "X-UA-Compatible" } }
+    %meta{ name: "viewport", content: "width=device-width, initial-scale=1" }
+    %title Unique Characters
     %link{ href: "assets/images/favicon.png", rel: "shortcut icon" }
     = stylesheet_link_tag "application"
     = stylesheet_link_tag "https://fonts.googleapis.com/icon?family=Material+Icons"
@@ -15,7 +15,7 @@
       = partial "layouts/info"
       = partial "layouts/theme_dots"
       .main-wrapper
-        .main-overlay{ data: { info_hide: true, main_overlay: true } }
+        .main-overlay{ data: { main_overlay: true, info_hide: true } }
         = partial "layouts/filter_nav"
         %main
           = partial "layouts/header"

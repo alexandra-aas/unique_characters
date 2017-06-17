@@ -20,14 +20,14 @@
   @include media-up($large-screen) {
     @include padding(null $xl-spacing);
   }
+
+  button {
+    align-self: center;
+  }
 }
 
 .info-content {
   @include media-down($medium-screen) {
     margin-bottom: $medium-spacing;
   }
-}
-
-.submit-button {
-  align-self: center;
 }

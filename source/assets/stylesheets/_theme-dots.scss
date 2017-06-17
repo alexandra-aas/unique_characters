@@ -16,7 +16,7 @@ $theme-height: $theme-dot-size + $small-spacing * 2;
   @include margin(null $xs-spacing);
   @include circle($theme-dot-size);
   cursor: pointer;
-  transition: all $base-duration $base-timing;
+  transition: $base-transition;
 
   &:hover {
     transform: scale(1.25);

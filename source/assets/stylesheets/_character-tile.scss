@@ -27,7 +27,7 @@ $character-tile-arrow-size: $medium-spacing;
   @include flex-center;
   @include size(100%);
   position: relative;
-  transition: all $base-duration $base-timing;
+  transition: $base-transition;
   z-index: $character-tile-z-index;
 
   path {

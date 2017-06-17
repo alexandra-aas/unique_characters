@@ -1,4 +1,5 @@
 - content_for :breadcrumb, tagname
 
-- page_articles.each do |article|
-  = partial "layouts/character_tile", locals: { article: article }
+.character-tiles
+  - page_articles.each do |article|
+    = partial "layouts/character_tile", locals: { article: article }

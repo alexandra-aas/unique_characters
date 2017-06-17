@@ -8,7 +8,7 @@ html {
 body {
   color: $base-font-color;
   font-family: $base-font-family;
-  font-size: $base-font-size;
+  font-size: $small-font-size;
   font-weight: normal;
   line-height: $base-line-height;
 }
@@ -17,7 +17,6 @@ h1 {
   font-family: $base-font-family;
   font-size: $base-font-size;
   font-weight: bold;
-  line-height: $base-line-height;
   margin: 0;
 }
 
@@ -26,13 +25,16 @@ h2 {
 }
 
 p {
-  font-size: $small-font-size;
   margin-bottom: $small-spacing;
 }
 
 small {
-  color: $light-gray;
+  color: $medium-gray;
   font-size: $xs-font-size;
+
+  a {
+    text-decoration: underline;
+  }
 }
 
 a {
@@ -43,6 +45,5 @@ a {
   &:focus,
   &:hover {
     color: inherit;
-    text-decoration: underline;
   }
 }

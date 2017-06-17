@@ -31,20 +31,17 @@ body {
   @include hidden;
   @include position(absolute, 0);
   background-color: $transparent-background-color;
-  transition: all $base-duration $base-timing;
+  transition: $base-transition;
   z-index: $overlay-z-index;
 
   .info-show & {
     @include visible;
+    cursor: pointer;
 
-    &:hover {
-      cursor: pointer;
+    &:hover,
+    &.preview-theme {
       opacity: 0;
     }
-  }
-
-  &.preview-theme {
-    opacity: 0;
   }
 }
 
@@ -53,6 +50,6 @@ main {
   height: 100vh;
 
   @include media-up($medium-screen) {
-    padding-left: $nav-size;
+    padding-left: $nav-width;
   }
 }

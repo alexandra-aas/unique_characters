@@ -2,7 +2,7 @@ nav {
   @include position(absolute, 0 null 0 0);
   background-color: $base-background-color;
   box-shadow: 1px 0 0 $base-border-color;
-  width: $nav-size;
+  width: $nav-width;
 
   @include media-down($medium-screen) {
     display: none;
@@ -20,8 +20,7 @@ nav {
 }
 
 .filter {
-  color: $light-gray;
-  font-size: $small-font-size;
+  color: $medium-gray;
   font-weight: bold;
   line-height: $loose-line-height;
   text-align: center;
@@ -31,12 +30,11 @@ nav {
   a {
     color: $base-font-color;
     display: block;
-    text-decoration: none;
-    transition: all $base-duration $base-timing;
+    transition: $base-transition;
 
     &:hover,
     &.current {
-      background-color: $lighter-gray;
+      background-color: $light-gray;
     }
   }
 }

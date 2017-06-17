@@ -1,17 +1,17 @@
+$button-border: 1px solid $white;
 $button-height: 50px;
 $button-offset: 4px;
-$button-offset-far: $button-offset * 2;
+$button-line-height: $button-height + $button-offset;
 
 .button {
   @include padding(null $medium-spacing);
   border: $button-border;
   color: $white;
   font-family: $mono-font-family;
-  font-size: $small-font-size;
   height: $button-height;
-  line-height: $button-height + $button-offset;
+  line-height: $button-line-height;
   position: relative;
-  transition: all $base-duration $base-timing;
+  transition: $base-transition;
 
   &::after {
     @include position(absolute, -1px);

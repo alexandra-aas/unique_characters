@@ -1,10 +1,12 @@
+$header-height: $large-spacing;
+
 header {
   @include padding(null $medium-spacing);
   align-items: center;
   border-bottom: $base-border;
   display: flex;
   font-weight: bold;
-  height: $nav-size;
+  height: $header-height;
   justify-content: space-between;
 
   @include media-down($medium-screen) {
@@ -14,7 +16,7 @@ header {
 
 .breadcrumb-divider::after {
   @include margin(null $small-spacing);
-  content: "\203A";
+  content: $content_arrow;
   opacity: 0.5;
 }
 

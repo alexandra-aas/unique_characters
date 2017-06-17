@@ -3,7 +3,7 @@ $base-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvet
 $mono-font-family: "SFMono-Semibold", Consolas, "Liberation Mono", Menlo, Courier, monospace;
 
 // Font Sizes
-$base-font-size: 1em;
+$base-font-size: 1rem;
 $small-font-size: $base-font-size * 0.875;
 $xs-font-size: $base-font-size * 0.75;
 
@@ -22,8 +22,8 @@ $xl-spacing: $base-spacing * 6;
 // Colors
 $black: #000;
 $dark-gray: #333;
-$lighter-gray: #EEE;
-$light-gray: #AAA;
+$medium-gray: #AAA;
+$light-gray: #EEE;
 $white: #fff;
 $blue: #4C65E7;
 
@@ -39,7 +39,6 @@ $transparent-background-color: rgba($black, 0.5);
 // Borders
 $base-border-color: rgba($dark-gray, 0.1);
 $base-border: 1px solid $base-border-color;
-$button-border: 1px solid $white;
 
 // Shadows
 $shadow-color: rgba($black, 0.2);
@@ -50,6 +49,7 @@ $far-shadow: 0 20px 40px 0 $shadow-color;
 $base-duration: 200ms;
 $slow-duration: 400ms;
 $base-timing: ease-in-out;
+$base-transition: all $base-duration $base-timing;
 
 // Z-Index
 $character-tile-z-index: 1000;
@@ -59,7 +59,10 @@ $theme-dots-z-index: 3000;
 // Sizes
 $info-height: 200px;
 $info-height-mobile: 80vh;
-$nav-size: $large-spacing;
+$nav-width: $large-spacing;
+
+// Content
+$content_arrow: "\203A";
 
 //Breakpoints
 $ipad-width: 768px;

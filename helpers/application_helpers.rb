@@ -8,7 +8,7 @@ module ApplicationHelpers
     "(SVG not found)"
   end
 
-  def form_path
+  def submit_form_path
     "https://goo.gl/forms/D72gzFDcTB1w8aql2"
   end
 
