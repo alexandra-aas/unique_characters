@@ -3,6 +3,6 @@
     - ("a".."z").each do |character|
       %li.filter
         - if tag_path(character)
-          = link_to character, tag_path(character)
+          = link_to character, tag_path(character), class: "#{ 'current' if tag_path(character) == current_page.url }"
         - else
           = character

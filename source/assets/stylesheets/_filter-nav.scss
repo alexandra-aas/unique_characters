@@ -24,13 +24,19 @@ nav {
   font-size: $small-font-size;
   font-weight: bold;
   line-height: $loose-line-height;
+  text-align: center;
   text-transform: uppercase;
+  width: 100%;
 
   a {
     color: $base-font-color;
+    display: block;
+    text-decoration: none;
+    transition: all $base-duration $base-timing;
 
-    &:hover {
-      color: $action-color;
+    &:hover,
+    &.current {
+      background-color: $lighter-gray;
     }
   }
 }

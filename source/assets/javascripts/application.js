@@ -10,10 +10,10 @@ $("[data-info-hide]").click(function() {
 
 $("[data-change-theme]").click(function() {
   var newTheme = $(this).data("change-theme");
-  var themeWrapper = $("[data-theme]");
+  var themeClass = $("[data-theme-class]");
 
-  themeWrapper.removeClass();
-  themeWrapper.addClass("theme-" + newTheme);
+  themeClass.removeClass();
+  themeClass.addClass("theme-" + newTheme);
 });
 
 $("[data-theme-dots]").hover(function() {
