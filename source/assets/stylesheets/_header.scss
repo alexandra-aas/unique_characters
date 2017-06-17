@@ -12,7 +12,7 @@ header {
   }
 }
 
-.breadcrumb::after {
+.breadcrumb-divider::after {
   @include margin(null $small-spacing);
   content: "\203A";
   opacity: 0.5;

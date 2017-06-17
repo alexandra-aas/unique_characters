@@ -1,6 +1,10 @@
 %header
   %h1
     = link_to "Unique Characters", "/"
-    = yield_content :breadcrumb
+
+    - if content_for?(:breadcrumb)
+      %span.breadcrumb-divider
+      = yield_content :breadcrumb
+
   .header-info{ data: { info_show: true } }
     = material_icon("help")

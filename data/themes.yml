@@ -6,3 +6,5 @@
   color: "#EEE"
 - name: "pink"
   color: "#FFC6AB"
+- name: "neon"
+  color: "#24FA7B"
