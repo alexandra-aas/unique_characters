@@ -8,7 +8,7 @@ header {
   justify-content: space-between;
 
   @include media-down($medium-screen) {
-    background-color: $secondary-background-color;
+    background-color: $base-background-color;
   }
 }
 

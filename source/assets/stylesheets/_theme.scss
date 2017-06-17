@@ -1,27 +1,19 @@
 $theme-circle-size: 16px;
+$theme-height: $theme-circle-size + $small-spacing * 2;
 
 .theme {
-  @include padding(null $large-spacing);
-  @include position(absolute, null 0 0);
+  @include padding(null $small-spacing);
+  @include position(absolute, null 0 0 null);
   align-items: center;
+  background-color: $dark-background-color;
+  border-top-left-radius: $theme-height / 2;
   display: flex;
-  font-family: $mono-font-family;
-  height: $large-spacing;
+  height: $theme-height;
+  z-index: 20000;
 }
 
 .theme-circle {
+  @include margin(null $xs-spacing);
   @include circle($theme-circle-size);
-  margin-left: $small-spacing;
-}
-
-.theme-circle-gold {
-  background-color: $theme-gold;
-}
-
-.theme-circle-mint {
-  background-color: $theme-mint;
-}
-
-.theme-circle-snow {
-  background-color: $theme-snow;
+  cursor: pointer;
 }

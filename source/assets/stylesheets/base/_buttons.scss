@@ -22,7 +22,7 @@ $button-offset-far: $button-offset * 2;
   }
 
   &:hover {
-    background-color: $white;
+    background-color: $base-background-color;
     color: $base-font-color;
   }
 }

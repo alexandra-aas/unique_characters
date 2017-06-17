@@ -36,7 +36,7 @@ $character-tile-arrow-size: $medium-spacing;
 
   @include media-up($medium-screen) {
     &:hover {
-      background-color: $secondary-background-color;
+      background-color: $base-background-color;
       box-shadow: $far-shadow, $close-shadow;
       color: $action-color;
       transform: translateY(-$small-spacing);

@@ -1,5 +1,3 @@
 .theme
-  %small Palette
-  .theme-circle.theme-circle-gold{ data: { theme: "gold" } }
-  .theme-circle.theme-circle-mint{ data: { theme: "mint" } }
-  .theme-circle.theme-circle-snow{ data: { theme: "snow" } }
+  - data.themes.each do |theme|
+    .theme-circle{ class: "theme-circle-#{theme.name}", data: { theme: theme.name } }

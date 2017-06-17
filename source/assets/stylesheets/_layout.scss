@@ -12,7 +12,7 @@ body {
 .main-wrapper {
   @include position(absolute, 0);
   overflow: hidden;
-  transition: margin $slow-duration $base-timing;
+  transition: all $slow-duration $base-timing;
 
   .info-show & {
     margin-top: $info-height-mobile;

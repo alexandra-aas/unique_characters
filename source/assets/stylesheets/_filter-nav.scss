@@ -1,6 +1,6 @@
 nav {
   @include position(absolute, 0 null 0 0);
-  background-color: $secondary-background-color;
+  background-color: $base-background-color;
   box-shadow: 1px 0 0 $base-border-color;
   width: $nav-size;
 

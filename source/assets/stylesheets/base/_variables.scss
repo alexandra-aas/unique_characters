@@ -36,12 +36,12 @@ $base-font-color: $dark-gray;
 $action-color: $blue;
 
 // Background Colors
-$secondary-background-color: $white;
+$base-background-color: $white;
 $dark-background-color: $dark-gray;
 $transparent-background-color: rgba($black, 0.5);
 
 // Borders
-$base-border-color: rgba($dark-gray, 0.2);
+$base-border-color: rgba($dark-gray, 0.1);
 $base-border: 1px solid $base-border-color;
 $button-border: 1px solid $white;
 
