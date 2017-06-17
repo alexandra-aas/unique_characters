@@ -15,3 +15,7 @@ $("[data-change-theme]").click(function() {
   themeWrapper.removeClass();
   themeWrapper.addClass("theme-" + newTheme);
 });
+
+$("[data-theme-dots]").hover(function() {
+  $("[data-main-overlay]").toggleClass("preview-theme");
+});

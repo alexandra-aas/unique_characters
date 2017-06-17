@@ -9,11 +9,16 @@ $theme-height: $theme-dot-size + $small-spacing * 2;
   border-top-left-radius: $theme-height / 2;
   display: flex;
   height: $theme-height;
-  z-index: 20000;
+  z-index: $theme-dots-z-index;
 }
 
 .theme-dot {
   @include margin(null $xs-spacing);
   @include circle($theme-dot-size);
   cursor: pointer;
+  transition: all $base-duration $base-timing;
+
+  &:hover {
+    transform: scale(1.25);
+  }
 }

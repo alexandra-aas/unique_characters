@@ -42,6 +42,10 @@ body {
       opacity: 0;
     }
   }
+
+  &.preview-theme {
+    opacity: 0;
+  }
 }
 
 main {
