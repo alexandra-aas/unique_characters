@@ -1,11 +1,42 @@
 <style>
   <% data.themes.each do |theme| %>
     .theme-<%= theme.name %> .main-wrapper {
-      background-color: <%= theme.color %>;
+      background-color: <%= theme.background_color %>;
     }
 
     .theme-dot-<%= theme.name %> {
-      background-color: <%= theme.color %>;
+      background-color: <%= theme.background_color %>;
     }
+
+    <% if theme.character_tile %>
+      .theme-<%= theme.name %> .character-tile-wrapper {
+        box-shadow: <%= theme.character_tile.wrapper_box_shadow %>;
+      }
+
+      .theme-<%= theme.name %> .character-tile path {
+        fill: <%= theme.character_tile.character_fill %>;
+      }
+
+      .theme-<%= theme.name %> .character-tile__arrow {
+        background-color: <%= theme.character_tile.arrow_background_color %>;
+        color: <%= theme.character_tile.arrow_color %>;
+      }
+
+      .theme-<%= theme.name %> .character-tile:hover {
+        background-color: <%= theme.character_tile.hover.background_color %>;
+        color: <%= theme.character_tile.hover.color %>;
+      }
+
+      .theme-<%= theme.name %> .character-tile:hover path {
+        fill: <%= theme.character_tile.hover.character_fill %>;
+      }
+    <% end %>
+
+    <% if theme.header %>
+      .theme-<%= theme.name %> header {
+        border-bottom: <%= theme.header.border %>;
+        color: <%= theme.header.color %>;
+      }
+    <% end %>
   <% end %>
 </style>
