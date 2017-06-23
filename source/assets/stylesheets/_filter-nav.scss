@@ -2,6 +2,7 @@ nav {
   @include position(absolute, 0 null 0 0);
   background-color: $base-background-color;
   box-shadow: 1px 0 0 $base-border-color;
+  display: flex;
   width: $nav-width;
 
   @include media-down($medium-screen) {
@@ -12,11 +13,11 @@ nav {
 .filters {
   @include overflow-y;
   @include padding($base-spacing null);
-  @include size(100%);
   align-items: center;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  width: 100%;
 }
 
 .filter {
