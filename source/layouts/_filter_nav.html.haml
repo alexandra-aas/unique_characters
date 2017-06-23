@@ -4,6 +4,7 @@
       %li.filter
         - if tag_path(character)
           = link_to character, tag_path(character),
-            class: "#{ 'current' if tag_path(character) == current_page.url }"
+            class: "#{ 'current' if tag_path(character) == current_page.url }",
+            data: { theme_param_link: true }
         - else
           = character
