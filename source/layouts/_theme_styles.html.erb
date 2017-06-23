@@ -17,8 +17,12 @@
         box-shadow: <%= theme.character_tile.wrapper_box_shadow %>;
       }
 
+      .theme-<%= theme.name %> .character-tile {
+        color: <%= theme.character_tile.color %>;
+      }
+
       .theme-<%= theme.name %> .character-tile path {
-        fill: <%= theme.character_tile.character_fill %>;
+        fill: <%= theme.character_tile.color %>;
       }
 
       .theme-<%= theme.name %> .character-tile__arrow {
@@ -26,20 +30,24 @@
         color: <%= theme.character_tile.arrow_color %>;
       }
 
-      .theme-<%= theme.name %> .character-tile:hover {
-        background-color: <%= theme.character_tile.hover.background_color %>;
-        color: <%= theme.character_tile.hover.color %>;
-      }
+      @media (min-width: 768px) {
+        .theme-<%= theme.name %> .character-tile:hover {
+          background-color: <%= theme.character_tile.hover.background_color %>;
+          color: <%= theme.character_tile.hover.color %>;
+        }
 
-      .theme-<%= theme.name %> .character-tile:hover path {
-        fill: <%= theme.character_tile.hover.character_fill %>;
+        .theme-<%= theme.name %> .character-tile:hover path {
+          fill: <%= theme.character_tile.hover.color %>;
+        }
       }
     <% end %>
 
     <% if theme.header %>
-      .theme-<%= theme.name %> header {
-        border-bottom: <%= theme.header.border %>;
-        color: <%= theme.header.color %>;
+      @media (min-width: 768px) {
+        .theme-<%= theme.name %> header {
+          border-bottom: <%= theme.header.border %>;
+          color: <%= theme.header.color %>;
+        }
       }
     <% end %>
   <% end %>

@@ -32,6 +32,7 @@ $character-tile-arrow-size: $medium-spacing;
 
   path {
     fill: $base-font-color;
+    transition: $base-transition;
   }
 
   @include media-up($medium-screen) {
