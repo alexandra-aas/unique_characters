@@ -5,7 +5,11 @@
     }
 
     .theme-dot-<%= theme.name %> {
-      background-color: <%= theme.background_color %>;
+      <% if theme.dot_color %>
+        background-color: <%= theme.dot_color %>;
+      <% else %>
+        background-color: <%= theme.background_color %>;
+      <% end %>
     }
 
     <% if theme.character_tile %>
