@@ -71,6 +71,7 @@ $character-tile-arrow-size: $medium-spacing;
   @include size($character-tile-arrow-size);
   background-color: $action-color;
   color: $white;
+  overflow: hidden;
 
   i {
     @include flex-center;
