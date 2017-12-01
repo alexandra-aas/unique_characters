@@ -26,25 +26,18 @@ $character-tile-arrow-size: $medium-spacing;
 .character-tile {
   @include flex-center;
   @include size(100%);
+  fill: $base-font-color;
   position: relative;
   transition: $base-transition;
   z-index: $character-tile-z-index;
 
-  path {
-    fill: $base-font-color;
-    transition: $base-transition;
-  }
-
   @include media-up($medium-screen) {
     &:hover {
       background-color: $base-background-color;
-      box-shadow: $far-shadow, $close-shadow;
+      box-shadow: $close-shadow, $far-shadow;
       color: $action-color;
+      fill: $action-color;
       transform: translateY(-$small-spacing);
-
-      path {
-        fill: $action-color;
-      }
     }
   }
 }

@@ -1,7 +1,7 @@
 .character-tile-wrapper
   = link_to article.data.website_url, class: "character-tile", target: "_blank" do
     .character-tile__character
-      = svg "#{article.date.strftime('%Y-%m-%d')}"
+      = svg "characters/#{article.date.strftime('%Y-%m-%d')}"
     .character-tile__meta
       %time= article.date.strftime('%m.%d.%Y')
       %span= article.title
