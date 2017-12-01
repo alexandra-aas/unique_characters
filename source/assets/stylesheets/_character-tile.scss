@@ -73,10 +73,7 @@ $character-tile-arrow-size: $medium-spacing;
   color: $white;
   overflow: hidden;
 
-  i {
-    @include flex-center;
-    @include hidden;
-    @include size($character-tile-arrow-size);
+  svg {
     transform: translate(-$character-tile-arrow-size, $character-tile-arrow-size);
     transition: all $slow-duration $base-timing;
   }
@@ -85,8 +82,7 @@ $character-tile-arrow-size: $medium-spacing;
     .character-tile:hover & {
       @include visible;
 
-      i {
-        @include visible;
+      svg {
         transform: translate(0, 0);
       }
     }
