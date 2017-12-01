@@ -7,18 +7,18 @@
     %title Unique Characters
     = favicon_tag "favicon.png"
     = stylesheet_link_tag "application"
-    = partial "layouts/theme_styles"
+    = partial "partials/theme_styles"
 
   %body
     .theme-gold{ data: { theme_class: true } }
-      = partial "layouts/info"
+      = partial "partials/info"
       .main-wrapper
         .main-overlay{ data: { main_overlay: true, info_hide: true } }
-        = partial "layouts/filter_nav"
+        = partial "partials/filter_nav"
         %main
-          = partial "layouts/header"
+          = partial "partials/header"
           = yield
 
     = javascript_include_tag "https://code.jquery.com/jquery-2.1.1.min.js"
     = javascript_include_tag "application"
-    = partial "layouts/google_analytics"
+    = partial "partials/google_analytics"
