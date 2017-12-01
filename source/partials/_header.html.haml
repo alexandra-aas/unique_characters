@@ -1,10 +1,12 @@
-%header
+%header.header
   %h1
-    = link_to "Unique Characters", "/", data: { theme_param_link: true }
+    %span.breadcrumb
+      = link_to "Unique Characters", "/"
 
     - if content_for?(:breadcrumb)
       %span.breadcrumb-divider
-      = yield_content :breadcrumb
+      %span.breadcrumb
+        = yield_content :breadcrumb
 
-  .header-info{ data: { info_show: true } }
+  .header__info{ data: { info_show: true } }
     About

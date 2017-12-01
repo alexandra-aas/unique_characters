@@ -1,6 +1,6 @@
 $header-height: $large-spacing;
 
-header {
+.header {
   @include padding(null $medium-spacing);
   align-items: center;
   border-bottom: $base-border;
@@ -14,12 +14,12 @@ header {
   }
 }
 
+.header__info {
+  cursor: pointer;
+}
+
 .breadcrumb-divider::after {
   @include margin(null $xs-spacing);
   content: $content_arrow;
   opacity: 0.5;
-}
-
-.header-info {
-  cursor: pointer;
 }

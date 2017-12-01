@@ -26,7 +26,7 @@
   }
 }
 
-.info-content {
+.info__content {
   @include media-down($medium-screen) {
     margin-bottom: $medium-spacing;
   }

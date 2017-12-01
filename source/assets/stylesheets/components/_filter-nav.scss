@@ -13,7 +13,6 @@ nav {
 .filters {
   @include overflow-y;
   @include padding($base-spacing null);
-  align-items: center;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -27,15 +26,20 @@ nav {
   text-align: center;
   text-transform: uppercase;
   width: 100%;
+}
 
-  a {
-    color: $base-font-color;
-    display: block;
-    transition: $base-transition;
+.filter__link {
+  color: $base-font-color;
+  display: block;
+  transition: $base-transition;
 
-    &:hover,
-    &.current {
-      background-color: $light-gray;
-    }
+  &:hover,
+  &.current {
+    background-color: $light-gray;
+  }
+
+  &:hover {
+    background-color: $action-color;
+    color: $white;
   }
 }
