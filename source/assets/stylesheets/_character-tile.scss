@@ -37,18 +37,18 @@ $character-tile-arrow-size: $medium-spacing;
       box-shadow: $close-shadow, $far-shadow;
       color: $action-color;
       fill: $action-color;
-      transform: translateY(-$small-spacing);
+      transform: translateY(-$xs-spacing);
     }
   }
 }
 
 .character-tile__meta {
-  @include position(absolute, null $base-spacing $base-spacing);
+  @include position(absolute, null $base-spacing $small-spacing);
   display: flex;
   font-family: $mono-font-family;
   font-size: $xs-font-size;
   justify-content: space-between;
-  opacity: 0.5;
+  opacity: 0.6;
 
   @include media-up($medium-screen) {
     .character-tile:hover & {

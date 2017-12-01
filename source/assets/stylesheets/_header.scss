@@ -15,7 +15,7 @@ header {
 }
 
 .breadcrumb-divider::after {
-  @include margin(null $small-spacing);
+  @include margin(null $xs-spacing);
   content: $content_arrow;
   opacity: 0.5;
 }

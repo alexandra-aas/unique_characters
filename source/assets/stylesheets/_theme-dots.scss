@@ -1,8 +1,8 @@
 $theme-dot-size: 16px;
-$theme-height: $theme-dot-size + $small-spacing * 2;
+$theme-height: $theme-dot-size + $xs-spacing * 2;
 
 .theme-dots {
-  @include padding(null $small-spacing);
+  @include padding(null $xs-spacing);
   @include position(absolute, null 0 0 null);
   align-items: center;
   background-color: $dark-background-color;
@@ -13,7 +13,7 @@ $theme-height: $theme-dot-size + $small-spacing * 2;
 }
 
 .theme-dot {
-  @include margin(null $xs-spacing);
+  @include margin(null $xxs-spacing);
   @include circle($theme-dot-size);
   cursor: pointer;
   transition: $base-transition;
