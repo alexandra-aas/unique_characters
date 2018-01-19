@@ -11,44 +11,5 @@
         background-color: <%= theme.background_color %>;
       <% end %>
     }
-
-    <% if theme.character_tile %>
-      .theme-<%= theme.name %> .character-tile-wrapper {
-        box-shadow: <%= theme.character_tile.wrapper_box_shadow %>;
-      }
-
-      .theme-<%= theme.name %> .character-tile {
-        color: <%= theme.character_tile.color %>;
-      }
-
-      .theme-<%= theme.name %> .character-tile path {
-        fill: <%= theme.character_tile.color %>;
-      }
-
-      .theme-<%= theme.name %> .character-tile__arrow {
-        background-color: <%= theme.character_tile.arrow_background_color %>;
-        color: <%= theme.character_tile.arrow_color %>;
-      }
-
-      @media (min-width: 768px) {
-        .theme-<%= theme.name %> .character-tile:hover {
-          background-color: <%= theme.character_tile.hover.background_color %>;
-          color: <%= theme.character_tile.hover.color %>;
-        }
-
-        .theme-<%= theme.name %> .character-tile:hover path {
-          fill: <%= theme.character_tile.hover.color %>;
-        }
-      }
-    <% end %>
-
-    <% if theme.header %>
-      @media (min-width: 768px) {
-        .theme-<%= theme.name %> header {
-          border-bottom: <%= theme.header.border %>;
-          color: <%= theme.header.color %>;
-        }
-      }
-    <% end %>
   <% end %>
 </style>
