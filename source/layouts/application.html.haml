@@ -19,6 +19,9 @@
           = partial "partials/header"
           = yield
 
+    = partial "partials/theme_dots"
+
     = javascript_include_tag "https://code.jquery.com/jquery-2.1.1.min.js"
+    = javascript_include_tag "https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"
     = javascript_include_tag "application"
     = partial "partials/google_analytics"

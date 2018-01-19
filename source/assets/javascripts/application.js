@@ -1,5 +1,5 @@
 // On Load
-setThemeFromParams();
+loadTheme();
 
 // On Click
 $("[data-info-show]").click(function() {
@@ -20,25 +20,25 @@ $("[data-theme-dots]").hover(function() {
   $("[data-main-overlay]").toggleClass("preview-theme");
 });
 
+$("[data-change-theme]").click(function() {
+  var newThemeName = $(this).data("change-theme");
+  setTheme(newThemeName);
+});
+
 // Functions
 function setTheme(themeName) {
   var themeClass = $("[data-theme-class]");
   themeClass.removeClass();
   themeClass.addClass("theme-" + themeName);
-
-  $("[data-theme-param-link]").each(function() {
-    var filterLink = $(this);
-    var filterLinkHref = filterLink.attr("href").split('?')[0];
-    filterLink.attr("href", filterLinkHref + "?theme=" + themeName);
-  });
+  Cookies.set("theme", themeName);
 }
 
-function setThemeFromParams() {
-  var url_string = window.location.href;
-  var url = new URL(url_string);
-  var newThemeName = url.searchParams.get("theme");
+function loadTheme() {
+  var loadedTheme = Cookies.get("theme");
 
-  if (newThemeName != null) {
-    setTheme(newThemeName);
+  if (loadedTheme != undefined) {
+    setTheme(loadedTheme);
+  } else {
+    setTheme("gold");
   }
 }
