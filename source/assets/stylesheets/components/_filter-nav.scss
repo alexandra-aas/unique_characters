@@ -3,6 +3,7 @@ nav {
   background-color: $base-background-color;
   box-shadow: 1px 0 0 $base-border-color;
   display: flex;
+  font-size: $small-font-size;
   width: $nav-width;
 
   @include media-down($medium-screen) {

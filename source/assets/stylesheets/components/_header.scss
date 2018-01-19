@@ -12,6 +12,15 @@ $header-height: $large-spacing;
   @include media-down($medium-screen) {
     background-color: $base-background-color;
   }
+
+  a {
+    border-bottom: 1px solid transparent;
+    transition: border-bottom $base-duration $base-timing;
+
+    &:hover {
+      border-bottom: 1px solid;
+    }
+  }
 }
 
 .header__info {

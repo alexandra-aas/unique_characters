@@ -6,3 +6,5 @@
   background_color: "#EEE"
 - name: "peach"
   background_color: "#FFC6AB"
+- name: "neon"
+  background_color: "#DAFC06"

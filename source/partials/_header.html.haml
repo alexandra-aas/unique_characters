@@ -8,5 +8,4 @@
       %span.breadcrumb
         = yield_content :breadcrumb
 
-  .header__info{ data: { info_show: true } }
-    About
+  = link_to "About", "#", data: { info_show: true }
