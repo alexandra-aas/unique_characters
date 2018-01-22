@@ -1,0 +1,13 @@
+$themes: (
+  gold: "#FFC438",
+  mint: "#D2E4C5",
+  snow: "#EEE",
+  peach: "#FFC6AB",
+  neon: "#DAFC06"
+);
+
+@each $name, $color in $themes  {
+  .theme-#{$name} {
+    --bg: $color;
+  }
+}
