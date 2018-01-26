@@ -1,3 +1,7 @@
+:root {
+  --bg: #FFC438;
+}
+
 html {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
@@ -11,6 +15,7 @@ body {
 
 .main-wrapper {
   @include position(absolute, 0);
+  background-color: var(--bg);
   overflow: hidden;
   transition: all $slow-duration $base-timing;
 

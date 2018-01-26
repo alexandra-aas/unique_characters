@@ -38,7 +38,5 @@ function loadTheme() {
 
   if (loadedTheme != undefined) {
     setTheme(loadedTheme);
-  } else {
-    setTheme("gold");
   }
 }
