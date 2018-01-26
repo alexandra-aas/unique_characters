@@ -46,7 +46,6 @@ $character-tile-arrow-size: $medium-spacing;
   @include position(absolute, null $base-spacing $small-spacing);
   display: flex;
   font-family: $mono-font-family;
-  font-size: $xs-font-size;
   justify-content: space-between;
   opacity: 0.6;
 
