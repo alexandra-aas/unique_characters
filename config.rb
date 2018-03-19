@@ -24,6 +24,12 @@ activate :blog do |blog|
   # blog.page_link = "page/{num}"
 end
 
+activate :contentful do |f|
+  f.access_token = '5081448719531193a0142ce589b1e6a31dd0b3e5de8b758e0ac4a9aca82c566a'
+  f.space = { space: 'pbuxw9ebesfu' }
+  f.content_types = { characters: 'character' }
+end
+
 set :relative_links, true
 set :css_dir, "assets/stylesheets"
 set :js_dir, "assets/javascripts"
