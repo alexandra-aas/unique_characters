@@ -1,9 +1,9 @@
 .character-tile-wrapper
-  = link_to article.data.website_url, class: "character-tile", target: "_blank" do
+  = link_to url, class: "character-tile", target: "_blank" do
     .character-tile__character
-      = svg "characters/#{article.date.strftime('%Y-%m-%d')}"
+      = image_tag svg, class: "svg"
     .character-tile__meta
-      %time= article.date.strftime('%m.%d.%Y')
-      %span= article.title
+      %time= DateTime.parse(date).strftime('%m.%d.%Y')
+      %span= typeface
     .character-tile__arrow
       = svg "arrow"
