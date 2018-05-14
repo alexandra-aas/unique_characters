@@ -1,9 +1,5 @@
 %nav
   %ul.filters
-    - ("a".."z").each do |character|
+    - data.space.tags.each do |id, tag|
       %li.filter
-        - if tag_path(character)
-          = link_to character, tag_path(character),
-            class: "filter__link #{ 'current' if tag_path(character) == current_page.url }"
-        - else
-          = character
+        = tag["character"]

@@ -2,10 +2,19 @@
 :id: 6mOZ4Msbte22AWU4gI2yKu
 :_meta:
   :content_type_id: character
-  :updated_at: '2018-03-17T21:17:05+00:00'
+  :updated_at: '2018-05-11T20:24:35+00:00'
   :created_at: '2018-03-17T21:17:05+00:00'
   :id: 6mOZ4Msbte22AWU4gI2yKu
 :typeface: Bergman
+:url: http://f37foundry.com/font-library/f37-bergman
+:tag:
+  :id: 4blrevKsQwici6ouq4u4EG
+  :_meta:
+    :content_type_id: tag
+    :updated_at: '2018-05-11T20:01:30+00:00'
+    :created_at: '2018-05-11T20:01:30+00:00'
+    :id: 4blrevKsQwici6ouq4u4EG
+  :character: G
 :svg:
   :title: bergman
   :description: 
@@ -14,4 +23,3 @@
     :updated_at: '2018-03-17T21:16:48+00:00'
     :created_at: '2018-03-17T21:16:48+00:00'
     :id: XNNOsDnOgwegAYaaQUyI4
-:url: http://f37foundry.com/font-library/f37-bergman
