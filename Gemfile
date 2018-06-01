@@ -4,7 +4,6 @@ source 'https://rubygems.org'
 
 gem "bourbon", "~> 4.2"
 gem "middleman", "~> 4.1"
-gem "middleman-blog"
 gem "middleman-autoprefixer", "~> 2.6"
 gem "middleman-livereload", "~> 3.4"
 gem 'redcarpet', '~> 3.3', '>= 3.3.3'

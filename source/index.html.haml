@@ -1,6 +1,6 @@
 .character-tiles
   - data.space.characters.each do |id, character|
-    = partial "partials/character_tile", locals: { typeface: character["typeface"],
-      date: character["_meta"]["created_at"],
-      url: character["url"],
-      svg: character["svg"]["url"] }
+    = partial "partials/character_tile", locals: { typeface: character.typeface,
+      date: character._meta.created_at,
+      url: character.url,
+      svg: character.svg.url }

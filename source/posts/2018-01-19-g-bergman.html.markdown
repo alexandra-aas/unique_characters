@@ -1,6 +1,0 @@
----
-title: Bergman
-date: 2018-01-19
-tags: G
-website_url: "http://f37foundry.com/font-library/f37-bergman"
----

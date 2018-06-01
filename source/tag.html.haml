@@ -1,5 +1,8 @@
+- content_for :breadcrumb, tag.character
+
 .character-tiles
-  - data.space.characters.each do |id, character|
+  - characters_for_tag = data.space.characters.select{ |id, character| character.tag.character == tag.character }
+  - characters_for_tag.each do |id, character|
     = partial "partials/character_tile", locals: { typeface: character["typeface"],
       date: character["_meta"]["created_at"],
       url: character["url"],
