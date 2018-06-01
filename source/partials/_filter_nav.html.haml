@@ -1,9 +1,13 @@
 %nav
   %ul.filters
-    - ("a".."z").each do |character|
+    - sorted_tags = Hash[ data.space.tags.sort_by { |id, tag| tag.character } ]
+    - sorted_tags.each do |id, tag|
       %li.filter
-        - if tag_path(character)
-          = link_to character, tag_path(character),
-            class: "filter__link #{ 'current' if tag_path(character) == current_page.url }"
+        - characters_for_tag = data.space.characters.select{ |id, character| character.tag.character == tag.character }
+        - characters_for_tag_count = characters_for_tag.count
+
+        - if characters_for_tag_count > 0
+          = link_to tag.character, "/tags/#{tag.character}.html",
+            class: "filter__link #{ 'current' if "/tags/#{tag.character}.html" == current_page.url }"
         - else
-          = character
+          = tag.character

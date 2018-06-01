@@ -1,6 +1,0 @@
----
-title: Chap
-date: 2017-07-03
-tags: E
-website_url: "https://www.schick-toikka.com/chap"
----

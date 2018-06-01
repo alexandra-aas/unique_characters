@@ -1,5 +1,9 @@
-- content_for :breadcrumb, tagname
+- content_for :breadcrumb, tag.character
 
 .character-tiles
-  - page_articles.each do |article|
-    = partial "partials/character_tile", locals: { article: article }
+  - characters_for_tag = data.space.characters.select{ |id, character| character.tag.character == tag.character }
+  - characters_for_tag.each do |id, character|
+    = partial "partials/character_tile", locals: { typeface: character["typeface"],
+      date: character["_meta"]["created_at"],
+      url: character["url"],
+      svg: character["svg"]["url"] }
