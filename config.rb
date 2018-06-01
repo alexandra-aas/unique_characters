@@ -31,5 +31,5 @@ configure :build do
 end
 
 data.space.tags.each do |id, tag|
-  proxy "tags/#{tag.character}.html", "tag.html", locals: { tag: tag }
+  proxy "tags/#{tag.character}.html", "tag.html", locals: { character: tag.character }, ignore: true
 end
